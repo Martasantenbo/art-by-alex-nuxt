@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { reactive, ref, watch } from 'vue'
-import Modal from './Modal.vue';
+
 import { paintings } from './paintings'
 defineProps<{
   header: string
@@ -123,7 +122,7 @@ const paintingSize = (i: number) => {
     </Modal>
   </article>
 </template>
-<style scoped lang="scss">
+<style scoped>
 .up {
   background-image: url("../assets/images/gallery-up.svg");
   background-repeat: no-repeat;

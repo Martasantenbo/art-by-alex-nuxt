@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+
 defineProps<{
   type: string
   home?: string
@@ -26,7 +26,7 @@ const changeLanguage = () => {
     </div>
   </article>
 </template>
-<style scoped lang="scss">
+<style scoped>
 .home {
   @apply bg-transparent;
   background-image: url("../assets/images/header.svg");

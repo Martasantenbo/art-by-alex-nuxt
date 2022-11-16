@@ -46,7 +46,7 @@ defineProps<{
     </div>
   </article>
 </template>
-<style scoped lang="scss">
+<style scoped>
 .column-rule {
   column-count: 2;
   column-gap: 60px;

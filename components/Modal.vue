@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onUpdated } from 'vue';
+
 const props = defineProps<{
   modelValue?: boolean;
 }>();
