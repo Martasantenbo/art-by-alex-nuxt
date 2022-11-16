@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { languages } from './languages';
 import Header from './Header.vue';
-import Main from './Main.vue';
+import GalleryMain from './GalleryMain.vue';
 import Footer from './Footer.vue';
 const language = ref('cz')
 const languageReturn = ref(languages.czech)
@@ -12,7 +12,7 @@ const changeLanguage = () => {
 }
 </script>
 <template>
-  <Header type="home" @change="changeLanguage" />
-  <Main v-bind="languageReturn" />
+  <Header type="gallery" @change="changeLanguage" :home="languageReturn.home" />
+  <GalleryMain v-bind="languageReturn" />
   <Footer />
 </template>
