@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import Header from '../assets/svg/header.svg'
+
 defineProps<{
   type: string
   home?: string
@@ -19,6 +21,7 @@ const changeLanguage = () => {
       :class="type">
       <router-link to="/">Art By Alex</router-link>
     </h1>
+    <Header />
     <router-link to="/" class="text-primary cursor-pointer text-24px font-text top-52 right-5 absolute" type="gallery">
       {{ home }}
     </router-link>

@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.13",
-    "nuxt-windicss": "^2.5.3"
+    "nuxt-windicss": "^2.5.5",
+    "svgo": "^3.0.1"
   }
 }
